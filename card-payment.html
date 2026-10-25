@@ -288,11 +288,11 @@
         <h4> ملخص الدفع</h4>
         <div class="summary-row">
           <span>المبلغ قبل الخصم </span>
-          <span id="originalPrice">0.00 ر.ع</span>
+          <span id="originalPrice">0.00 د.ب</span>
         </div>
         <div class="total">
           <span class="total-label" id="paymentLabel">المبلغ بعد الخصم  </span>
-          <span class="total-value" id="finalAmount">0.95 ر.ع</span>
+          <span class="total-value" id="finalAmount">0.95 د.ب</span>
         </div>
       </div>
 
@@ -377,8 +377,8 @@
         }
 
         if (shownOriginal != null) {
-            document.getElementById('originalPrice').textContent = shownOriginal + ' ر.ع';
-            document.getElementById('finalAmount').textContent = (shownDiscounted || shownOriginal) + ' ر.ع';
+            document.getElementById('originalPrice').textContent = shownOriginal + ' د.ب';
+            document.getElementById('finalAmount').textContent = (shownDiscounted || shownOriginal) + ' د.ب';
             if (shownDiscounted && shownDiscounted !== '—') {
                 document.getElementById('paymentLabel').textContent = 'المبلغ المدفوع';
             }
